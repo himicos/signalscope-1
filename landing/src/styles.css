@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71% 4%;
+    --primary: 223 76% 50%;
+    --primary-foreground: 210 40% 98%;
+    --muted: 210 16% 96%;
+    --card: 0 0% 100%;
+    --border: 214 32% 91%;
+    --ring: 224 76% 48%;
+    --accent: 260 89% 66%;
+  }
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+    --primary: 223 76% 60%;
+    --primary-foreground: 224 71% 4%;
+    --muted: 218 14% 12%;
+    --card: 222 47% 11%;
+    --border: 217 34% 17%;
+    --ring: 223 76% 60%;
+    --accent: 260 89% 66%;
+  }
+
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+/* micro-interactions */
+.btn { @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:pointer-events-none; }
+.btn-primary { @apply bg-slate-900 text-white hover:bg-slate-800 focus-visible:ring-black dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200; }
+.btn-ghost { @apply text-slate-700 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-800; }
+.badge { @apply inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-medium text-slate-700 border-slate-200 dark:text-slate-200 dark:border-slate-700; }
+.card { @apply rounded-xl border border-slate-200 bg-white/70 backdrop-blur-md shadow-soft dark:border-slate-800 dark:bg-slate-900/60; }
+.container { @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8; }

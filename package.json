@@ -1,0 +1,15 @@
+{
+  "name": "signalscope",
+  "description": "Reddit intelligence for operators, analysts, and founders",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}

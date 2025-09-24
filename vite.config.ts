@@ -70,7 +70,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     logErrorsPlugin(),
-    mode === 'development' && componentTaggerPlugin(),
+    // Disabled for now: mode === 'development' && componentTaggerPlugin(),
   ].filter(Boolean),
   resolve: {
     alias: {

@@ -63,6 +63,7 @@ const logErrorsPlugin = () => ({
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/signalscope_landing/' : '/',
   server: {
     host: "::",
     port: 3000,
